@@ -1127,6 +1127,14 @@ body {
   flex-direction: column;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+@media only screen and (max-width: 1157px) {
+  .backdrop-modal {
+    width: 392px;
+    height: 584px;
+    padding-right: 16px;
+    padding-left: 16px;
+  }
+}
 .backdrop-button-modal-icon {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
