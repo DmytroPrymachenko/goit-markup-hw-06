@@ -211,15 +211,16 @@ body {
 }
 @media only screen and (min-width: 768px) and (max-width: 1157px) {
   .site-nav-adress {
-    margin-left: 120px;
+    margin-left: 121px;
     flex-direction: column;
     gap: 12px;
+    /* width: 119px; */
   }
 }
 
 .site-nav-adress-link {
   color: var(--title-text-color);
-
+  /* width: 119px; */
   font-size: 16px;
   font-weight: 400;
   line-height: 1.5;
@@ -231,7 +232,9 @@ body {
 .site-nav-link:hover {
   color: #404bbf;
 }
-
+.advantages-list-content {
+  /* width: 119px; */
+}
 .address-header {
   font-style: normal;
 }
@@ -266,24 +269,50 @@ body {
 .hero {
   background-color: #2e2f42;
   padding: 112px 0 112px;
-
+  max-width: 428px;
   max-height: 432px;
   background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-    url(../images/people-office.jpg);
+    url(../images/bagraund/Dark-bg_mob.jpg);
   margin: 0 auto;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
-
+@media only screen and (min-resolution: 192dpi) {
+  .hero {
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+      url(../images/bagraund/Dark-bg_mob@2x.jpg);
+  }
+}
 @media only screen and (min-width: 768px) {
   .hero {
     padding: 188px 0 188px;
-    max-width: 1440px;
-    max-height: 600px;
+    max-width: 768px;
+    max-height: 436px;
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+      url(../images/bagraund/Dark-bg_tablet.jpg);
   }
 }
-
+@media only screen and (min-width: 768px) and (min-resolution: 192dpi) {
+  .hero {
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+      url(../images/bagraund/Dark-bg_tablet@2x.jpg);
+  }
+}
+@media only screen and (min-width: 1158px) {
+  .hero {
+    max-width: 1440px;
+    max-height: 600px;
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+      url(../images/bagraund/people-office1_desktop.jpg);
+  }
+}
+@media only screen and (min-width: 1158px) and (min-resolution: 192dpi) {
+  .hero {
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+      url(../images/bagraund/people-office1_desktop@2x.jpg);
+  }
+}
 .hero-container {
   text-align: center;
   display: flex;
@@ -364,7 +393,11 @@ body {
   align-items: center;
   gap: 72px;
 }
-
+@media only screen and (min-width: 768px) and (max-width: 1157px) {
+  .advantages-list-content {
+  }
+}
+/* width: calc(100% - 32px) / 2; */
 @media only screen and (min-width: 768px) {
   .advantages-list {
     gap: 24px;
@@ -374,7 +407,31 @@ body {
   width: calc(100% - 32px);
   /* width: calc(100% - 72px); */
 }
-
+@media only screen and (min-width: 768px) and (max-width: 1157px) {
+  .advantages-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    row-gap: 72px;
+    column-gap: 24px;
+  }
+}
+@media only screen and (min-width: 1158px) {
+  .advantages-list {
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1157px) {
+  .advantages-list-content {
+    width: 356px;
+  }
+}
+@media only screen and (min-width: 1158px) {
+  .advantages-list-content {
+    width: 264px;
+  }
+}
 .advantages-title {
   color: var(--primary-text-color);
   font-family: 'Roboto', sans-serif;
@@ -385,7 +442,7 @@ body {
   letter-spacing: 0.02em;
   margin-bottom: 8px;
 }
-@media only screen and (min-width: 320px) and (max-width: 767px) {
+@media only screen and (min-width: 320px) and (max-width: 1157px) {
   .advantages-title {
     text-align: center;
 
@@ -397,7 +454,11 @@ body {
     text-transform: capitalize;
   }
 }
-
+@media only screen and (min-width: 768px) and (max-width: 1157px) {
+  .advantages-title {
+    text-align: left;
+  }
+}
 .advantages-link {
   font-family: 'Roboto', sans-serif;
   color: var(--title-text-color);
@@ -411,11 +472,14 @@ body {
 
 @media only screen and (min-width: 768px) {
   .advantages-link {
-    color: var(--title-text-color);
-
+    width: 356px;
+  }
+}
+@media only screen and (min-width: 1158px) {
+  .advantages-link {
     font-weight: 400;
 
-    min-width: 264px;
+    width: 264px;
     min-height: 72px;
   }
 }
@@ -1288,4 +1352,107 @@ body {
   background-color: #404bbf;
   border: none;
   fill: #f4f4fd;
+}
+
+.menu-conteiner {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  padding: 80px 35px 40px 40px;
+
+  box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+    0px 2px 1px 0px rgba(46, 47, 66, 0.08);
+  transform: translateX(100%);
+  transition: transform 300ms ease-in;
+}
+.menu-conteiner.is-open {
+  transform: translateX(0);
+  transition-delay: 150ms;
+}
+.menu-toggle {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  padding: 0;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 24px;
+  min-height: 24px;
+  border: 1px solid #e7e9fc;
+  border-radius: 50%;
+  box-shadow: -2 -2 0 0 rgba(0, 0, 0, 0.6);
+  /* transform: translateX(8px) translateY(8px); */
+  transition: box-shadow 300ms cubic-bezier(0.47, 0, 0.745, 0.715);
+}
+@media only screen and not (hover: hover) {
+  .menu-toggle: active {
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.6);
+    /* transform: translateX(8px) transform: translateY(8px); */
+  }
+}
+
+.menu-toggle-icon {
+  fill: #2e2f42;
+}
+.mobile-menu {
+  margin-bottom: auto;
+}
+.mobile-menu-item:not(:last-child) {
+  margin-bottom: 40px;
+}
+.mobile-menu-link {
+  font-size: 36px;
+
+  font-weight: 700;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+}
+.mobile-menu-link.current-menu {
+  color: #404bbf;
+}
+..mobile-contacts {
+  margin-bottom: 48px;
+}
+.mobile-contacts-item:not(:last-child) {
+  margin-bottom: 40px;
+}
+.mobile-contacts-link {
+  color: #434455;
+
+  font-size: 20px;
+
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+}
+.mobile-contacts-link.mobile-contacts-link-accent {
+  color: #4d5ae5;
+
+  text-transform: capitalize;
+}
+@media only screen and (min-width: 428px) {
+  .mobile-contacts-link.mobile-contacts-link-accent {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.11;
+  }
+}
+
+@media only screen and (max-width: 427px) {
+  .mobail-element-list {
+    justify-content: space-between;
+  }
+}
+@media only screen and (min-width: 428px) {
+  .mobail-element-list {
+    gap: 56px;
+  }
 }
