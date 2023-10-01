@@ -98,6 +98,11 @@ body {
   box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16),
     0px 1px 6px rgba(46, 47, 66, 0.08);
 }
+@media only screen and (min-width: 768px) and (max-width: 1157px) {
+  .header {
+    width: 768px;
+  }
+}
 .container-header {
   display: flex;
   align-items: center;
@@ -178,7 +183,8 @@ body {
   justify-items: center;
 }
 @media only screen and (min-width: 768px) {
-  .button-burger {
+  .button-burger,
+  .menu-toggle {
     display: none;
   }
 }
@@ -231,6 +237,14 @@ body {
 .site-nav-link:focus,
 .site-nav-link:hover {
   color: #404bbf;
+}
+@media only screen and (min-width: 768px) and (max-width: 1157px) {
+  .site-nav-adress-link {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.16;
+    letter-spacing: 0.04em;
+  }
 }
 .advantages-list-content {
   /* width: 119px; */
@@ -285,7 +299,12 @@ body {
     background-size: cover;
   }
 }
-
+@media only screen and (min-width: 768px) {
+  .hero {
+    padding-top: 112px;
+    padding-bottom: 112px;
+  }
+}
 @media only screen and (min-width: 768px) {
   .hero {
     padding: 188px 0 188px;
@@ -385,14 +404,16 @@ body {
 }
 @media only screen and (min-width: 768px) {
   .advantages {
+    padding-top: 96px;
+    padding-bottom: 96px;
+  }
+}
+@media only screen and (min-width: 1158px) {
+  .advantages {
     padding-top: 120px;
     padding-bottom: 120px;
   }
 }
-
-.advantages-container {
-}
-
 .advantages-list {
   display: flex;
   flex-direction: column;
@@ -508,11 +529,13 @@ body {
 }
 /* <!-- 2га основна секція work
        --> */
-.work {
-  color: var(--primary-text-color);
-  padding-bottom: 120px;
+@media only screen and (min-width: 1128px) {
+  .work {
+    color: var(--primary-text-color);
+    padding-bottom: 120px;
+  }
 }
-@media only screen and (min-width: 320px) and (max-width: 767px) {
+@media only screen and (min-width: 320px) and (max-width: 1127px) {
   .container-work {
     display: none;
   }
@@ -543,7 +566,13 @@ body {
   width: 100%;
 }
 .team-container {
-  padding: 120px 0 120px;
+  padding-top: 96px;
+  padding-bottom: 96px;
+}
+@media only screen and (min-width: 1158px) {
+  .team-container {
+    padding: 120px 0 120px;
+  }
 }
 /* Заголовок Team*/
 .team-title {
@@ -658,11 +687,18 @@ body {
 }
 
 /* 4тя основна секція */
-.customers-container {
-  padding-top: 120px;
-  padding-bottom: 120px;
+@media only screen and (min-width: 320px) and (max-width: 1157px) {
+  .customers-container {
+    padding-top: 96px;
+    padding-bottom: 96px;
+  }
 }
-
+@media only screen and (min-width: 1158px) {
+  .customers-container {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+}
 .customers-list {
   display: flex;
   justify-content: center;
@@ -708,7 +744,7 @@ body {
 
 @media only screen and (min-width: 768px) {
   .li-customers-logo {
-    width: calc((100% - 16px) / 3);
+    width: calc((100% - 48px) / 3);
   }
 }
 
@@ -772,9 +808,15 @@ body {
   padding-top: 100px;
   padding-bottom: 100px;
 }
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+  .footer-floor {
+    padding-top: 98px;
+    padding-bottom: 98px;
+  }
+}
 .div-footer {
   display: flex;
-  gap: 24px;
+  /* gap: 24px; */
   align-items: baseline;
 }
 @media only screen and (min-width: 320px) and (max-width: 767px) {
@@ -793,11 +835,11 @@ body {
     column-gap: 24px;
   }
 }
-@media only screen and (min-width: 1158px) {
+/* @media only screen and (min-width: 1158px) {
   .div-footer {
     gap: 24px;
-  }
-}
+  } */
+
 @media only screen and (min-width: 768px) and (max-width: 1157px) {
   .footer-div-input {
   }
@@ -1311,11 +1353,7 @@ body {
     width: 264px;
   }
 }
-@media only screen and (min-width: 1158px) {
-  .footer-email {
-    margin-right: 24px;
-  }
-}
+
 .footer-div-input {
   display: flex;
   flex-direction: column;
@@ -1460,5 +1498,23 @@ body {
 @media only screen and (min-width: 428px) {
   .mobail-element-list {
     gap: 56px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .button-burger,
+  .menu-toggle {
+    display: none;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .hero {
+    padding-top: 112px;
+    padding-bottom: 112px;
+  }
+}
+@media only screen and (min-width: 1158px) {
+  .hero {
+    padding-top: 188px;
+    padding-bottom: 188px;
   }
 }
