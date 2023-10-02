@@ -21,13 +21,14 @@
   </head>
   <body>
     <!-- Шапка сайту -->
-    <header class="header">
+   <header class="header">
       <div class="container container-header">
         <nav class="site">
           <a class="logo link" href="./index.html">Web<span class="logo-studio">Studio</span></a>
+
           <ul class="site-nav list">
             <li>
-              <a class="site-nav-link link" href="./index.html">Studio</a>
+              <a class="site-nav-link link " href="./index.html">Studio</a>
             </li>
 
             <li>
@@ -51,12 +52,22 @@
             </li>
           </ul>
         </address>
+       
+          <button  class="button-burger menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu" >
+            <svg class="button-burger-svg" width="30" height="19">
+              <use href="./images/icons.svg#icon-burger"></use>
+            </svg>
+          </button>
+        </div>
       </div>
     </header>
     <main>
       <section class="section-portfolio">
         <div class="container div-portfolio">
           <h1 class="visually-hidden" hidden>button</h1>
+          <div class="div-hidden-mobail">
           <ul class="button-portfolio-list list">
             <li class="button-portfolio-vigual"
               ><button class="button-portfolio-accent" type="button">All</button></li
@@ -74,13 +85,13 @@
               <button class="button-portfolio-accent" type="button">Marketing</button>
             </li>
           </ul>
-
+</div>
           <ul class="portfolio-list list">
             <!-- Елемент списку -->
             <li class="portfolio-content-unit">
               <a class="portfolio-link link" href="">
                 <div class="portfolio-wrapper"
-                  ><img src="./images/bankingportfolio1.jpg" alt="Banking" width="360" />
+                  ><img class="portfolio-img" srcset="./images/portfolio/img_mobail.jpg 1x, ./images/portfolio/img@2x.jpg 2x" src="./images/portfolio/img_mobail.jpg" alt="Banking" loading="lazy" width="360" />
 
                   <p class="overlay-text"
                     >14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie
@@ -97,7 +108,7 @@
             <li class="portfolio-content-unit"
               ><a class="portfolio-link link" href="">
                 <div class="portfolio-wrapper"
-                  ><img src="./images/portfolio12.jpg" alt="Cashless" width="360" />
+                  ><img class="portfolio-img" srcset="./images/portfolio/img_mobail-1.jpg 1x, ./images/portfolio/img@2x-1.jpg 2x" src="./images/portfolio/img_mobail-1.jpg" alt="Cashless" loading="lazy" width="360" />
 
                   <p class="overlay-text"
                     >14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie
@@ -114,7 +125,7 @@
             <li class="portfolio-content-unit">
               <a class="portfolio-link link" href=""
                 ><div class="portfolio-wrapper"
-                  ><img src="./images/portfolio13.jpg" alt="Meditation" width="360" />
+                  ><img class="portfolio-img" srcset="./images/portfolio/img_mobail-2.jpg 1x, ./images/portfolio/img@2x-2.jpg 2x" src="./images/portfolio/img_mobail-2.jpg" alt="Meditation" loading="lazy" width="360" />
 
                   <p class="overlay-text"
                     >14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie
@@ -131,7 +142,7 @@
             <li class="portfolio-content-unit"
               ><a class="portfolio-link link" href="">
                 <div class="portfolio-wrapper"
-                  ><img src="./images/portfolio14.jpg" alt="Taxi Service" width="360" />
+                  ><img class="portfolio-img" srcset="./images/portfolio/img_mobail-3.jpg 1x, ./images/portfolio/img@2x-3.jpg 2x" src="./images/portfolio/img_mobail-3.jpg" alt="Taxi Service" loading="lazy" width="360" />
 
                   <p class="overlay-text"
                     >14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie
@@ -148,7 +159,7 @@
             <li class="portfolio-content-unit"
               ><a class="portfolio-link link" href="">
                 <div class="portfolio-wrapper"
-                  ><img src="./images/portfolio15.jpg" alt="Screen Illustrations" width="360" />
+                  ><img class="portfolio-img" srcset="./images/portfolio/img_mobail-4.jpg 1x, ./images/portfolio/img@2x-4.jpg 2x" src="./images/portfolio/img_mobail-4.jpg" alt="Screen Illustrations" loading="lazy" width="360" />
 
                   <p class="overlay-text"
                     >14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie
@@ -165,7 +176,7 @@
             <li class="portfolio-content-unit"
               ><a class="portfolio-link link" href=""
                 ><div class="portfolio-wrapper"
-                  ><img src="./images/portfolio16.jpg" alt="Online Courses" width="360" />
+                  ><img class="portfolio-img" srcset="./images/portfolio/img_mobail-5.jpg 1x, ./images/portfolio/img@2x-5.jpg 2x" src="./images/portfolio/img_mobail-5.jpg" alt="Online Courses" loading="lazy" width="360" />
 
                   <p class="overlay-text"
                     >14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie
@@ -182,8 +193,8 @@
             <li class="portfolio-content-unit"
               ><a class="portfolio-link link" href=""
                 ><div class="portfolio-wrapper"
-                  ><img
-                    src="./images/portfolio17.jpg"
+                  ><img class="portfolio-img"
+                    srcset="./images/portfolio/img_mobail-6.jpg 1x, ./images/portfolio/img@2x-6.jpg 2x" src="./images/portfolio/img_mobail-6.jpg" loading="lazy"
                     alt="Instagram Stories Concept"
                     width="360"
                   />
@@ -203,7 +214,7 @@
             <li class="portfolio-content-unit"
               ><a class="portfolio-link link" href=""
                 ><div class="portfolio-wrapper"
-                  ><img src="./images/portfolio18.jpg" alt="Organic Food" width="360" />
+                  ><img class="portfolio-img" srcset="./images/portfolio/img_mobail-7.jpg 1x, ./images/portfolio/img@2x-7.jpg 2x" src="./images/portfolio/img_mobail-7.jpg" alt="Organic Food" loading="lazy" width="360" />
 
                   <p class="overlay-text"
                     >14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie
@@ -220,7 +231,7 @@
             <li class="portfolio-content-unit"
               ><a class="portfolio-link link" href=""
                 ><div class="portfolio-wrapper"
-                  ><img src="./images/portfolio19.jpg" alt="Fresh Coffee" width="360" />
+                  ><img class="portfolio-img" srcset="./images/portfolio/img_mobail-8.jpg 1x, ./images/portfolio/img@2x-8.jpg 2x" src="./images/portfolio/img_mobail-8.jpg" alt="Fresh Coffee" loading="lazy" width="360" />
 
                   <p class="overlay-text"
                     >14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie
